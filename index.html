@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>The Parker's</title>
+    <link rel="icon" href="logo.jpeg">
+</head>
+<body>
+    <div class="line">
+        <div id="spaceCraft">
+            <model-viewer
+            id="rocket"
+            src="PSP.glb"
+            ios-src="rocket.usdz"
+            ar
+            ar-modes="scene-viewer webxr quick-look"
+            camera-controls
+            poster="poster.png"
+            shadow-intensity="1"
+          >
+            <button
+              id="btn1"
+              class="Hotspot"
+              slot="hotspot-1"
+              data-position="0.030278043414619038m -0.005124563796648607m -1.4802785813808441m"
+              data-normal="0m 0m -1m"
+              data-visibility-attribute="visible"
+            >
+              <div class="HotspotAnnotation">
+                Heat Shield
+              </div></button
+            ><button
+            id="btn1"
+              class="Hotspot"
+              slot="hotspot-3"
+              data-position="-0.007831016744248132m 0.8671013347233671m -0.6562414769959686m"
+              data-normal="-0.05686132172214581m 0.940039255749496m 0.33629300876162244m"
+              data-visibility-attribute="visible"
+            >
+              <div class="HotspotAnnotation">Cooling System</div></button
+            ><button
+            id="btn1"
+              class="Hotspot"
+              slot="hotspot-4"
+              data-position="1.7555152440586266m -0.05135441816273012m -0.0001768558194861214m"
+              data-normal="-0.000009041831949847773m 0m -0.9999999999591227m"
+              data-visibility-attribute="visible"
+            >
+              <div class="HotspotAnnotation">Solar Panels</div></button
+            ><button
+            id="btn1"
+              class="Hotspot"
+              slot="hotspot-5"
+              data-position="-0.017436356747175807m -0.00011820961931885421m 4.802123752174058m"
+              data-normal="-0.9993175168339217m 0.03682906700984114m 0.002849626654413453m"
+              data-visibility-attribute="visible"
+            >
+              <div class="HotspotAnnotation">Antenna</div></button
+            ><button
+            id="btn1"
+              class="Hotspot"
+              slot="hotspot-6"
+              data-position="0.017760240224134805m 0.07025770714997748m 3.2748105853922596m"
+              data-normal="-0.41183775364520997m 0.8333638103616458m -0.3686386092801272m"
+              data-visibility-attribute="visible"
+            >
+            <!-- hi -->
+              <div class="HotspotAnnotation">Magnetometer</div></button
+            ><button
+            id="btn1"
+              class="Hotspot"
+              slot="hotspot-7"
+              data-position="-0.3887656587883246m 0.655149788692162m 1.5027759237699434m"
+              data-normal="-0.3498460000074133m 0.9368072247153163m 0m"
+              data-visibility-attribute="visible"
+            >
+              <div class="HotspotAnnotation">Ion sensor</div>
+            </button>
+          </model-viewer>
+      
+          <script
+            type="module"
+            src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+          ></script>        </div>
+    </div>
+    <div id="frames">
+
+        <div id="frame7" class="frame">
+            <div class="text right">
+                
+              <a href="#frame1"><button class="big-button red">Start the journey</button></a>
+              <p>This was the story of a spacecraft that almost touched the sun. Let's start over together!
+
+                </p>
+            </div>
+          
+            
+        </div>
+        <div id="frame6">
+            <div class="text left">
+              <a href="#frame7"><button class="big-button red">Next Step</button></a>
+              <h3 id="quiz2h3">How close did the spacecraft get to the sun in meters?</h3>
+                <div class="answers">
+                <label class="white"><input id="true" type="radio" name="answer" onchange="document.getElementById('quiz2h3').style.color='red'">3 Million</label>                
+                <label class="white"><input id="false" type="radio" name="answer"   onchange="document.getElementById('quiz2h3').style.color='green'">5 Million</label>
+                <label class="white"><input id="true" type="radio" name="answer" onchange="document.getElementById('quiz2h3').style.color='red'">2 Million</label>
+                </div>
+                <a href="#frame5"><button class="big-button blue">Previous Step</button></a>
+              </div>
+        </div>
+        <div id="frame5">
+            <div class="text right">
+              <a href="#frame6"><button class="big-button red">Next Step</button></a>
+              <video src="SwingbySunCloseUp.mp4" autoplay muted loop style="float:right;  bottom: 300px;"></video>
+              <p>The spacecraft got close to 5 million miles from the sun's surface on Feb 25, 2022</p>
+              <a href="#frame4"><button class="big-button blue ">Previous Step</button></a>
+            </div>
+            <div id="sunDiv">
+                <div id="sunBorder">
+                <img src="sun .png" alt="" id="sun">
+
+                </div>
+
+            </div>
+        </div>
+        <div id="frame4">
+            <div class="text left">
+              <a href="#frame5"><button class="big-button red">Next Step</button></a>
+              <p>At this point dust started to cover the spaceship due to all the dust it went through.</p>
+              <a href="#frame3"><button class="big-button   blue">Previous Step</button></a>
+            </div>
+            <img src="smaller venus .png" alt="">
+
+        </div>
+        <div id="frame3">
+            <div class="text right">
+              <video src="VenusFlybySeries-FirstPass-BeautyShot-Larger-4K.mp4" autoplay muted loop style="float:right; bottom: 300px;"></video>
+              <a href="#frame4"><button class="big-button red">Next Step</button></a>
+              <p>Parker used the gravity of Venus for the gravity assist to help shape its path for its next closest approach to our star
+                    </p><br>
+                    <a href="#frame2"><button class="big-button blue">Previous Step</button></a>
+            </div>
+        </div>
+        <div id="frame2">
+            <div class="text left" style="color:black;">
+                <a href="#frame3"><button class="big-button red">Next Step</button></a>
+                    <h3 id="quiz1h3">The Parker Solar Probe was created on 13th August 2018</h3>
+                    <div class="answers">
+                    <label class="white"><input id="true" type="radio" name="answer" onchange="document.getElementById('quiz1h3').style.color='red'">True</label>
+                    <label class="white"><input id="false" type="radio" name="answer" onchange="document.getElementById('quiz1h3').style.color='green'">False</label>
+                    </div>
+                    <a href="#frame1"><button class="big-button blue">Previous Step</button></a>
+                  </div>
+            <img src="200 moon.png" alt="" id="moon" >
+            </div>
+
+        <div id="frame1">
+            <img src="Earth.png" alt="" id="earth">
+            <video src="FairingSeparation.mp4" autoplay muted loop style="float:right;"></video>
+            <div class="text right">
+              <a href="#frame2" class=""><button class="big-button purple">Take Off</button></a>
+                <p>On 12th of August 2018, Parker Solar Probe launched from earth on a 7 years mission to explore the atmosphere of the sun.</p>  
+            </div>
+          </div>
+
+        </div>
+
+    </div>
+
+    <script>
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    /* height: 15%; */
+    width: 100%;
+    /* display: flex; */
+    background-color: blue;
+    padding: 10px;
+
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    float: right;
+    /* margin-top: -20px; */
+    justify-content: space-between;
+    width: 20%;
+    color: black;
+}
+
+a{
+    color: black;
+}
